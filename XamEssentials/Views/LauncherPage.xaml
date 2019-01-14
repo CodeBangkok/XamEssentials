@@ -28,13 +28,9 @@
                         BackgroundColor="Silver"/>
                 <Button Grid.Row="2"
                         Grid.Column="0"
-                        Text="Launch Browser"
-                        x:Name="launchBrowserButton"
-                        BackgroundColor="Silver"/>
-                <Button Grid.Row="2"
-                        Grid.Column="1"
-                        Text="Launch Mail"
-                        x:Name="launchMailButton"
+                        Grid.ColumnSpan="2"
+                        Text="Launch"
+                        x:Name="launchButton"
                         BackgroundColor="Silver"/>
             </Grid>
         </ScrollView>
