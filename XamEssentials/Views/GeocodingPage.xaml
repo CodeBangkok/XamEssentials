@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.GeocodingPage"
+             Title="Geocoding">
+    <StackLayout>
+        <Label Text="Easily geocode and reverse geocoding."
+               FontAttributes="Bold"
+               Margin="12" />
+        <ScrollView>
+            <StackLayout Padding="12,0,12,12"
+                         Spacing="6">
+                <ActivityIndicator x:Name="busyIndicator" />
+                <Label Text="Geocoding:"
+                       FontAttributes="Bold"
+                       Margin="0,6,0,0" />
+                <Label Text="Latitude:" />
+                <Entry x:Name="latitudeEntry"
+                       Keyboard="Numeric" />
+                <Label Text="Longitude:" />
+                <Entry x:Name="longitudeEntry"
+                       Keyboard="Numeric" />
+                <Button Text="Detect Placemarks"
+                        x:Name="detectPlacemarksButton"
+                        BackgroundColor="Silver"/>
+                <Label x:Name="geocodeAddressLabel" />
+                <Label Text="Reverse Geocoding:"
+                       FontAttributes="Bold"
+                       Margin="0,6,0,0" />
+                <Label Text="Address:" />
+                <Entry x:Name="addressEntry" />
+                <Button Text="Detect Location"
+                        x:Name="detectLocationButton"
+                        BackgroundColor="Silver"/>
+                <Label x:Name="geocodePositionLabel"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

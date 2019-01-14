@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.MapsPage"
+             Title="Maps">
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="Open location in maps."
+                   FontAttributes="Bold" />
+            <Label Text="Options:" />
+            <Label Text="Navigation Mode" />
+            <Picker HorizontalOptions="FillAndExpand"
+                    x:Name="navigationModePicker"
+                    Title="Navigation Mode"/>
+            <Label Text="Name" />
+            <Entry x:Name="nameEntry" />
+            <Label Text="Latitude"
+                   Margin="0,24,0,0" />
+            <Entry Keyboard="Numeric"
+                   x:Name="latitudeEntry" />
+            <Label Text="Longitude" />
+            <Entry Keyboard="Numeric"
+                   x:Name="longitudeEntry" />
+            <Button Text="Open coordinates"
+                    x:Name="openCoordinateButton"
+                    BackgroundColor="Silver"/>
+            <Label Text="Thoroughfare"
+                   Margin="0,24,0,0" />
+            <Entry x:Name="thoroughfareEntry"/>
+            <Label Text="Locality" />
+            <Entry x:Name="localityEntry"/>
+            <Label Text="Admin Area" />
+            <Entry x:Name="adminAreaEntry" />
+            <Label Text="Country Name" />
+            <Entry x:Name="countryEntry"/>
+            <Label Text="Zip Code" />
+            <Entry x:Name="zipCodeEntry"
+                   Keyboard="Numeric" />
+            <Button Text="Open address"
+                    x:Name="openAddressButton"
+                    BackgroundColor="Silver"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

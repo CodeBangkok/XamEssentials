@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.PreferencesPage"
+             Title="Preferences">
+    <StackLayout>
+        <Label Text="Quickly and easily add persistent preferences."
+               FontAttributes="Bold"
+               Margin="12" />
+        <ScrollView>
+            <StackLayout Padding="12,0,12,12"
+                         Spacing="6">
+                <Label Text="Enter some text to save:" />
+                <Entry Placeholder="Enter text..."
+                       x:Name="textEntry"/>
+                <Button Text="Save"
+                        BackgroundColor="Silver"
+                        x:Name="saveButton"/>
+                <Button Text="Remove"
+                        BackgroundColor="Silver"
+                        x:Name="removeButton"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

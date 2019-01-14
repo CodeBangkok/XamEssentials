@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.LauncherPage"
+             Title="Launcher">
+    <StackLayout>
+        <Label Text="Check if Uri is launchable and launch it."
+               FontAttributes="Bold"
+               Margin="12" />
+        <ScrollView>
+            <Grid Padding="12,0,12,12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Entry Grid.Row="0"
+                       Grid.ColumnSpan="2"
+                       x:Name="launchUriEntry" />
+                <Button Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        Text="Check Launch"
+                        x:Name="checkLaunchButton"
+                        BackgroundColor="Silver"/>
+                <Button Grid.Row="2"
+                        Grid.Column="0"
+                        Text="Launch Browser"
+                        x:Name="launchBrowserButton"
+                        BackgroundColor="Silver"/>
+                <Button Grid.Row="2"
+                        Grid.Column="1"
+                        Text="Launch Mail"
+                        x:Name="launchMailButton"
+                        BackgroundColor="Silver"/>
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

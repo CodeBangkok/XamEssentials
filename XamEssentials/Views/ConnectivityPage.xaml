@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.ConnectivityPage"
+             Title="Connectivity">
+    <StackLayout>
+        <Label Text="Easily detect connectivity state."
+               FontAttributes="Bold"
+               Margin="12" />
+        <ScrollView>
+            <StackLayout Padding="12,6,12,12"
+                         Spacing="6">
+                <Label Text="Connectivity State:"
+                       FontAttributes="Bold" />
+                <Label x:Name="networkAccessLabel"/>
+                <Label x:Name="connectionProfilesLabel" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

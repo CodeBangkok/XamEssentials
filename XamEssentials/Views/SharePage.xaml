@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.SharePage"
+             Title="Share">
+    <StackLayout>
+        <Label Text="Share text and websites to other applications on the users device."
+               FontAttributes="Bold"
+               Margin="12" />
+        <ScrollView>
+            <StackLayout Padding="12,0,12,12"
+                         Spacing="6">
+                <Label Text="Title (Optional)" />
+                <Entry x:Name="titleEntry" />
+                <Label Text="Subject (Optional)" />
+                <Entry x:Name="subjectEntry" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Text"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="End" />
+                    <Switch HorizontalOptions="End"
+                            x:Name="shareTextSwitch"
+                            VerticalOptions="End" />
+                </StackLayout>
+                <Entry x:Name="textEntry"
+                       Placeholder="Enter text to share here." />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="URI"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="End" />
+                    <Switch HorizontalOptions="End"
+                            x:Name="shareUriSwitch"
+                            VerticalOptions="End" />
+                </StackLayout>
+                <Entry x:Name="uriEntry"
+                       Placeholder="Enter URI to share here." />
+                <Button Text="Request Transfer"
+                        x:Name="requestButton"
+                        BackgroundColor="Silver"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

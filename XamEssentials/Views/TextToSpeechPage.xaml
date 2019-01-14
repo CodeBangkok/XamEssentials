@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.TextToSpeechPage"
+             Title="Text To Speech">
+    <StackLayout>
+        <Label Text="Easily let your device speak for you."
+               FontAttributes="Bold"
+               Margin="12" />
+        <ScrollView>
+            <StackLayout Padding="12,0,12,12"
+                         Spacing="6">
+                <Label Text="Text :" />
+                <Editor x:Name="textEditor" />                
+                <Button Text="Speak"
+                        x:Name="speakButton"
+                        BackgroundColor="Silver"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

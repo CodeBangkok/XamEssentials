@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.EmailPage"
+             Title="Email">
+    <StackLayout>
+        <Label Text="Easily send email messages."
+               FontAttributes="Bold"
+               Margin="12" />
+        <ScrollView>
+            <StackLayout Padding="12,0,12,12"
+                         Spacing="6">
+                <ActivityIndicator x:Name="busyIndicator"/>
+                <Button Text="Send Email"
+                        x:Name="sendButton"
+                        BackgroundColor="Silver"/>
+                <Label Text="Recipients To:" />
+                <Entry x:Name="toEntry" />
+                <Label Text="Recipients CC:" />
+                <Entry x:Name="ccEntry" />
+                <Label Text="Recipients BCC:" />
+                <Entry x:Name="bccEntry" />
+                <Label Text="Subject:" />
+                <Entry x:Name="subjectEntry" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Is Html?"
+                           HorizontalTextAlignment="End"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="Center" />
+                    <Switch x:Name="isHtmlSwitch"
+                            VerticalOptions="Center" />
+                </StackLayout>
+                <Label Text="Body:" />
+                <Editor x:Name="bodyEditor"
+                        Keyboard="Chat"
+                        AutoSize="TextChanges"
+                        VerticalOptions="FillAndExpand"
+                        HeightRequest="100" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

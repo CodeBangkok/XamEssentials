@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.MagnetometerPage"
+             Title="Magnetometer">
+    <StackLayout>
+        <Label Text="Detect device's orientation relative to Earth's magnetic field."
+               FontAttributes="Bold"
+               Margin="12" />
+        <ScrollView>
+            <Grid Padding="12,0,12,12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0"
+                       Grid.ColumnSpan="2"
+                       x:Name="xLabel"/>
+                <Label Grid.Row="1"
+                       Grid.ColumnSpan="2"
+                       x:Name="yLabel" />
+                <Label Grid.Row="2"
+                       Grid.ColumnSpan="2"
+                       x:Name="zLabel"/>
+                <Picker Grid.Row="4"
+                        Grid.ColumnSpan="2"
+                        HorizontalOptions="FillAndExpand"
+                        x:Name="speedPicker"
+                        Title="Speed"/>
+                <Button Grid.Row="5"
+                        Grid.Column="0"
+                        Text="Start"
+                        x:Name="startButton"
+                        BackgroundColor="Silver"/>
+                <Button Grid.Row="5"
+                        Grid.Column="1"
+                        Text="Stop"
+                        x:Name="stopButton"
+                        BackgroundColor="Silver"/>
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

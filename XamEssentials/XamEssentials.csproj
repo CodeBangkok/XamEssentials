@@ -1,0 +1,102 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1009999" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\PreferencesPage.xaml.cs">
+      <DependentUpon>PreferencesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SecureStoragePage.xaml.cs">
+      <DependentUpon>SecureStoragePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AccelerometerPage.xaml.cs">
+      <DependentUpon>AccelerometerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AppInfoPage.xaml.cs">
+      <DependentUpon>AppInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\BarometerPage.xaml.cs">
+      <DependentUpon>BarometerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\BrowserPage.xaml.cs">
+      <DependentUpon>BrowserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ClipboardPage.xaml.cs">
+      <DependentUpon>ClipboardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CompassPage.xaml.cs">
+      <DependentUpon>CompassPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ConnectivityPage.xaml.cs">
+      <DependentUpon>ConnectivityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DeviceInfoPage.xaml.cs">
+      <DependentUpon>DeviceInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\EmailPage.xaml.cs">
+      <DependentUpon>EmailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\FileSystemPage.xaml.cs">
+      <DependentUpon>FileSystemPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\FlashlightPage.xaml.cs">
+      <DependentUpon>FlashlightPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\GeocodingPage.xaml.cs">
+      <DependentUpon>GeocodingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\GeolocationPage.xaml.cs">
+      <DependentUpon>GeolocationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\GyroscopePage.xaml.cs">
+      <DependentUpon>GyroscopePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\KeepScreenOnPage.xaml.cs">
+      <DependentUpon>KeepScreenOnPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\LauncherPage.xaml.cs">
+      <DependentUpon>LauncherPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MagnetometerPage.xaml.cs">
+      <DependentUpon>MagnetometerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MapsPage.xaml.cs">
+      <DependentUpon>MapsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\OrientationSensorPage.xaml.cs">
+      <DependentUpon>OrientationSensorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PhoneDialerPage.xaml.cs">
+      <DependentUpon>PhoneDialerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SharePage.xaml.cs">
+      <DependentUpon>SharePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SMSPage.xaml.cs">
+      <DependentUpon>SMSPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\TextToSpeechPage.xaml.cs">
+      <DependentUpon>TextToSpeechPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VibrationPage.xaml.cs">
+      <DependentUpon>VibrationPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

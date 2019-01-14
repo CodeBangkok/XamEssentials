@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.AppInfoPage"
+             Title="App Info">
+    <StackLayout>
+        <Label Text="Find out about the app with ease."
+               FontAttributes="Bold"
+               Margin="12" />
+        <ScrollView>
+            <StackLayout Padding="12,0,12,12"
+                         Spacing="6">
+                <Label Text="App Info:"
+                       FontAttributes="Bold"
+                       Margin="0,6,0,0" />
+                <Label x:Name="nameLabel" />
+                <Label x:Name="packageName" />
+                <Label Text="Version Info:"
+                       FontAttributes="Bold"
+                       Margin="0,6,0,0" />
+                <Label x:Name="versionLabel" />
+                <Label x:Name="buildLabel" />
+                <Button Text="Open Settings"
+                        x:Name="settingButton"
+                        BackgroundColor="Silver" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

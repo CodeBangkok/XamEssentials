@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.BatteryPage"
+             Title="Battery">
+    <StackLayout>
+        <Label Text="Easily detect battery level, source, and state."
+               FontAttributes="Bold"
+               Margin="12" />
+        <ScrollView>
+            <StackLayout Padding="12,0,12,12"
+                         Spacing="6">
+                <Label Text="Battery State:"
+                       FontAttributes="Bold"
+                       Margin="0,6,0,0" />
+                <Label x:Name="levelLabel" />
+                <Label x:Name="stateLabel" />
+                <Label x:Name="powerSourceLabel" />
+                <Label x:Name="energySaverStatusLabel" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

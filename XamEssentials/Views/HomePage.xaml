@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials.Views.HomePage"
+             Title="Xamarin.Essentials [CodeBangkok]">
+
+    <ListView x:Name="menuListView"
+              HasUnevenRows="true"
+              CachingStrategy="RecycleElement">
+              
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="12" ColumnSpacing="6" RowSpacing="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="48" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="{Binding Icon}"
+                               FontSize="24"
+                               Grid.RowSpan="2"
+                               HorizontalOptions="Center" VerticalOptions="Center" />
+
+                        <Label Text="{Binding Name}"
+                               FontAttributes="Bold"
+                               Grid.Column="1" />
+                        <Label Text="{Binding Description}"
+                               FontAttributes="Italic" TextColor="DarkGray"
+                               Grid.Column="1" Grid.Row="1" />
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>
+</ContentPage>
